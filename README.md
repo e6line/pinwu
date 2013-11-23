@@ -20,7 +20,7 @@ PinWu
 * -Products.html
 
 
-##This is a static file for PinWu
+##These are static files of PinWu
 
   For the convenience of our development
 
