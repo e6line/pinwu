@@ -1,0 +1,174 @@
+@charset "utf-8";
+/* CSS Document */
+
+.homeDiy-wrap{
+	background:#fff;
+	margin-bottom:20px;
+}
+
+.changePic{
+	position:relative;
+	width:100%;
+	height:286px;
+	margin-bottom:20px;
+}
+.changePic img{
+	position:absolute;
+}
+.changePic1{
+	z-index:3
+}
+.changePic2{
+	z-index:2
+}
+.changePic3{
+	z-index:1
+}
+
+
+.experienceroom-wrap{
+	border:1px solid #eee;
+}
+
+.experienceroom-title{
+	padding:25px 0;
+	height:30px;
+}
+.experienceroom-title p{
+	height:30px;
+	padding-left:190px;
+	background:#eee url(../images/home-diy-icon.gif) right center no-repeat;
+	position:relative;
+	line-height:30px;
+}
+.experienceroom-title p span.t-h{
+	position:absolute;
+	top:-10px;
+	left:10px;
+	width:170px;
+	height:50px;
+	line-height:50px;
+	color:#fff;
+	text-align:center;
+	background:#e43a3d;
+	font-family:"微软雅黑";
+	font-size:16px;
+}
+
+.experienceroom-function{
+	height:200px;
+	padding-bottom:15px;
+	border-bottom:1px solid #eee;
+}
+
+.experienceroom-function a.pre, .experienceroom-function a.next{
+	float:left;
+	width:12px;
+	height:32px;
+	background:url(../images/bannerArrow.png) no-repeat;
+}
+.experienceroom-function a.pre{
+	margin:84px 10px 0px 12px;
+	background-position: 0px 100%;
+}
+.experienceroom-function a.pre:hover{
+	background-position: 0px 0px;
+}
+.experienceroom-function a.next{
+	margin:84px 12px 0px 10px;
+	background-position: 100% 100%;
+}
+.experienceroom-function a.next:hover{
+	background-position: 100% 0px;
+}
+.experienceroom-function .bscroll{
+	float:left;
+	height:200px;
+	width:1140px;
+	position:relative;
+	overflow:hidden;
+}
+.experienceroom-function .bscroll ul{
+	position:absolute;
+	top:0;
+	overflow: hidden;
+}
+.experienceroom-function .bscroll li{
+	float:left;
+	width:228px;
+	height:190px;
+	padding-top:12px;
+	text-align:center;
+}
+.experienceroom-function .bscroll li a{
+	text-decoration:none;
+}
+.experienceroom-function .bscroll li a p span{
+	display:inline-block;
+	padding:2px 5px;
+	margin-right:2px;
+	background:#e43a3d;
+	color:#fff;
+}
+
+.experienceroom-function .bscroll li.active{
+	background:#e43a3d;
+	color:#fff;
+}
+.experienceroom-function .bscroll li.active a{
+	color:#fff;
+}
+.experienceroom-function .bscroll li.active a p span{
+	background:#fff;
+	color:#e43a3d
+}
+
+
+
+.no-box{
+	margin-bottom: 20px;
+	padding: 0 20px 20px;
+}
+
+.no-box h1{
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	font-size: 18px;
+	color: #000;
+}
+.no-box ul{
+	width: 1140px;
+	margin: 0 auto;
+}
+.no-box ul li{
+	float: left;
+	width: 150px;
+	height: 190px;
+	margin:0 6px;
+}
+.no-box ul li a{
+	display: block;
+	width: 150px;
+	height: 190px;
+}
+.no-box ul li a i{
+	width: 150px;
+	height: 150px;
+	line-height: 0;
+	overflow: hidden;
+}
+.no-box ul li a i img{
+	width: 150px;
+	height: 150px;
+}
+.no-box ul li a span{
+	display: inline-block;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+}
+.no-box ul li a:hover span{
+	background: #f9f9f9
+}
