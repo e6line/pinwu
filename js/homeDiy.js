@@ -21,7 +21,7 @@ $(document).ready(function(){
 	
 	
 	//Diy-function
-	(function() {
+	(function(fun_id) {
 		var u = $("#scroll2"),
 			li = u.find("li"),
 			len = li.length,
@@ -30,9 +30,18 @@ $(document).ready(function(){
 			n = 0,
 			num = parseInt(len/5);
 		
-		u.css("width", len*228);
+		li.removeClass("active");
+		for(var i=0;i<li.length; i++){
+			
+			if(li[i].id == fun_id){
+				li.eq(i).addClass("active");
+				n = parseInt(i/5);
+			}
+		}
 		
-		an(0);
+		u.css("width", len*228);
+				
+		an(n);
 		
 		l.click(function(){
 			n<=0 ? n=0 : n--
@@ -46,12 +55,11 @@ $(document).ready(function(){
 		
 		
 		function an(n){
-			console.log(n)
 			u.animate({"left":n*-1140},200);
 		}
 		
 		
-	})();
+	})(default_fun_id);
 	
 	
 })

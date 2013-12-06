@@ -180,7 +180,10 @@
     
 	<link rel="stylesheet" href="style/homeDiy.css"/>
 	<script type="text/javascript" src="js/homeDiy.js"></script>
-    
+    <script>
+		var default_fun_id = "li7";
+		var nav_nth = 8;
+	</script>
     
     
     <div class="homeDiy-wrap">
@@ -203,7 +206,7 @@
             	<a id="pre" class="pre" href="javascript:;" title="上一页"></a>
                 <div id="bscroll" class="bscroll">
                 	<ul id="scroll2">
-                    	<li class="active">
+                    	<li id="li1" class="active">
                         	<a href="#">
                             	<img src="images/home-s1.jpg" alt="" title="" />
                                 <p>
@@ -257,7 +260,7 @@
                                 </p>
                             </a>
                         </li>
-                    	<li>
+                    	<li id="li7">
                         	<a href="#">
                             	<img src="images/home-s1.jpg" alt="" title="" />
                                 <p>
@@ -279,7 +282,7 @@
                         </a>
                     </div>
                     <div class="effect-bigPic-result-link base-clear">
-                    	<a id="result_link_l" class="result-link-l" href="#">查看方案详情</a>
+                    	<a id="result_link_l"  href="#" class="result-link-l">查看方案详情</a>
                         <a class="result-link-r" href="#"></a>
                     </div>
             	</div>
@@ -287,7 +290,7 @@
                     <dl class="base-clear">
                     	<dt>选择板材</dt>
                         <dd>
-                        	<div class="active">
+                        	<div class="active" data-id="1">
                                 <span class="e-c-p">
                                     <img src="images/c1.jpg" />
                                     <em></em>
@@ -320,7 +323,7 @@
                     <dl class="base-clear default">
                     	<dt>选择地面</dt>
                         <dd>
-                        	<div class="active">
+                        	<div class="active" data-id="1">
                                 <span class="e-c-p">
                                     <img src="images/c1.jpg" />
                                     <em></em>
@@ -353,7 +356,7 @@
                     <dl class="base-clear default">
                     	<dt>选择墙面</dt>
                         <dd>
-                        	<div class="active">
+                        	<div class="active" data-id="2">
                                 <span class="e-c-p">
                                     <img src="images/c1.jpg" />
                                     <em></em>
@@ -361,7 +364,7 @@
                             	<p>板材名称</p>
                             </div>
                         	<div>
-                                <span class="e-c-p">
+                                <span class="e-c-p" data-id="3">
                                     <img src="images/c1.jpg" />
                                     <em></em>
                                 </span>
@@ -389,6 +392,14 @@
         </div>
 
     </div>
+    <script>
+		var feature="";
+		//post    a.php?feature=1&board=2&ground=1&wall=123
+		//{src:"";url:"";}
+		//$
+    
+    </script>
+
    
 
     <div class="no-box">
@@ -545,11 +556,3 @@
 </div>
 </body>
 </html>
-
-
-       
-       
-
-         
-
-         
