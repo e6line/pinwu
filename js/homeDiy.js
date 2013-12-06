@@ -1,11 +1,6 @@
 // JavaScript Document
 
 
-
-
-
-
-
 $(document).ready(function(){
 	
 	//DiyTopBanner Show
@@ -24,25 +19,20 @@ $(document).ready(function(){
 	
 	
 	
+	
 	//Diy-function
 	(function() {
-		var u = $("#s-pic-list"),
+		var u = $("#scroll2"),
 			li = u.find("li"),
 			len = li.length,
-			l = $("#l-b"),
-			r = $("#r-b"),
-			b = $("#big-pic"),
-			n = 0;
+			l = $("#pre"),
+			r = $("#next"),
+			n = 0,
+			num = parseInt(len/5);
 		
-		u.css("width", len*175);
+		u.css("width", len*228);
 		
 		an(0);
-			
-		li.click(function(){
-			var i = $(this).index();
-			n = i;
-			an(n);
-		})
 		
 		l.click(function(){
 			n<=0 ? n=0 : n--
@@ -50,14 +40,14 @@ $(document).ready(function(){
 		})
 		
 		r.click(function(){
-			n>=len-1 ? n=len-1 : n++
+			n>=num ? n=num : n++
 			an(n);
 		})
 		
+		
 		function an(n){
-			li.removeClass("active").eq(n).addClass("active");
-			b.attr("src", li.eq(n).find("img").attr("data-big"));
-			u.animate({"left":n*-175},200);
+			console.log(n)
+			u.animate({"left":n*-1140},200);
 		}
 		
 		

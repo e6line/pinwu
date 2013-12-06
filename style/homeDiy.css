@@ -91,6 +91,9 @@
 .experienceroom-function .bscroll ul{
 	position:absolute;
 	top:0;
+	left:0;
+	padding-right:228px;
+	background:url(../images/overl.gif) right center no-repeat;
 	overflow: hidden;
 }
 .experienceroom-function .bscroll li{
@@ -122,6 +125,130 @@
 	background:#fff;
 	color:#e43a3d
 }
+.experienceroom-effect{
+	height:710px;
+}
+.effect-bigPic{
+	float:left;
+	width:869px;
+	height:670px;
+	padding:20px;
+	border-right:1px solid #eee;
+}
+.effect-bigPic-result{
+	width:868px;
+	height:600px;
+	line-height:0;
+	background:url(../images/loading.gif) center center no-repeat;
+	margin-bottom:20px;
+}
+.effect-bigPic-result img{
+	width:868px;
+	height:600px;
+}
+.result-link-l{
+	float:left;
+	width:180px;
+	height:50px;
+	color:#fff;
+	font-size:18px;
+	font-family:"微软雅黑";
+	background:#e43a3d;
+	text-align:center;
+	line-height:50px;
+}
+.result-link-l:hover{
+	color:#fff;
+	background:#c8292b;
+	text-decoration:none;
+}
+.result-link-r{
+	float:right;
+	width:178px;
+	height:48px;
+	background:#fff url(../images/b.png) center center no-repeat;
+	border:1px solid #eee;
+}
+.result-link-r:hover{
+	background:#F3F3F3 url(../images/b.png) center center no-repeat;
+}
+
+.effect-choose{
+	float:right;
+	width:298px;
+	height:710px;
+	overflow:hidden;
+}
+.effect-choose dl{
+	margin-bottom:12px;
+}
+.effect-choose dl dt{
+	width:290px;
+	height:32px;
+	padding-left:8px;
+	line-height:32px;
+	background:#e43a3d;
+	color:#fff;
+	font-size:14px;
+	font-family:"微软雅黑";
+	font-weight:bold;
+	
+}
+.effect-choose dl.default dt{
+	width:290px;
+	height:32px;
+	padding-left:8px;
+	line-height:32px;
+	background:#eee;
+	color:#666;
+	font-size:14px;
+	font-family:"微软雅黑";
+	font-weight:bold;
+	cursor:pointer;
+}
+.effect-choose dl.default dd{
+	display:none;
+}
+.effect-choose dl dd div{
+	float:left;
+	width:50px;
+	height:64px;
+	margin:12px 12px 0;
+	cursor:pointer;
+}
+.effect-choose dl dd div .e-c-p{
+	display:block;
+	width:46px;
+	height:46px;
+	border:2px solid #eee;
+	line-height:0;
+	position:relative;
+}
+.effect-choose dl dd div .e-c-p span{
+	position:absolute;
+	width:15px;
+	height:15px;
+	background:url(../images/g.gif);
+	right:0;
+	bottom:0;
+	display:none;
+}
+.effect-choose dl dd div p{
+	text-align:center;
+	height:14px;
+	line-height:14px;
+}
+.effect-choose dl dd div .e-c-p img{
+	height:46px;
+	width:46px;
+}
+.effect-choose dl dd div.active .e-c-p{
+	border:2px solid #e43a3d;
+}
+.effect-choose dl dd div.active .e-c-p span{
+	display:block;
+}
+
 
 
 
