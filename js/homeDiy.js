@@ -30,7 +30,7 @@ $(document).ready(function(){
 		li.removeClass("active");
 		for(var i=0;i<li.length; i++){
 			
-			if(li[i].id == fun_id){
+			if(li[i].id == 'li'+fun_id){
 				li.eq(i).addClass("active");
 				n = parseInt(i/5);
 			}
@@ -77,30 +77,35 @@ $(document).ready(function(){
 				p = $(this).parent();
 			p.find("div").removeClass("active");
 			$(this).addClass("active");
-			
-			if(p.attr("data-name") == "board"){
-				board = $(this).attr("data-id")
-			}else if(p.attr("data-name") == "ground"){
-				ground = $(this).attr("data-id")
-			}else if(p.attr("data-name") == "wall"){
-				wall = $(this).attr("data-id")
-			};
-			
+
+			$("#effect_choose dd .active").each(function(i){
+				if (i==0) {
+					board = $(this).attr('data-id');
+				} else if(i==1) {
+					ground = $(this).attr('data-id');
+				} else {
+					wall = $(this).attr('data-id');
+				}
+			});
 
 			$.ajax({
 				type: "POST",
-				url: "http://baidu.com",
+				url: "/diy/?method=ajax",
 				timeout: 5000,
 				async: false,
 				dataType: 'json',
 			    data: {
-				    "feature":feature,
+				    "feature":default_fun_id,
 				   	"board":board,
 					"ground":ground,
 					"wall":wall
 				},
 				success: function(d){
-
+					// console.log(d);
+					if (d.thumb_src) {
+						$('#effect_bigPic_link, #result_link_l').attr('href', d.link);
+						$('#effect_bigPic_link img').attr('src', d.thumb_src);
+					};
 				},
 				error: function() {
 					
