@@ -125,6 +125,9 @@
 	background:#fff;
 	color:#e43a3d
 }
+.experienceroom-function .bscroll li img{
+	width: 200px;
+}
 .experienceroom-effect{
 	height:710px;
 }
