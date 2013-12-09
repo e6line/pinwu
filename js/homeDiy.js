@@ -17,9 +17,6 @@ $(document).ready(function(){
 		$(".changePic"+ic_i).fadeOut(800);
 	}
 	
-	
-	
-	
 	//Diy-function
 	(function(fun_id) {
 		var u = $("#scroll2"),
@@ -38,28 +35,81 @@ $(document).ready(function(){
 				n = parseInt(i/5);
 			}
 		}
-		
 		u.css("width", len*228);
-				
 		an(n);
-		
 		l.click(function(){
 			n<=0 ? n=0 : n--
 			an(n);
 		})
-		
 		r.click(function(){
 			n>=num ? n=num : n++
 			an(n);
-		})
-		
-		
+		})		
 		function an(n){
 			u.animate({"left":n*-1140},200);
 		}
 		
-		
 	})(default_fun_id);
+	
+	
+	
+	(function(){
+		
+		var box = $("#effect_choose");
+		var dl = box.find("dl");
+		var dt = box.find("dt");
+		var dd = box.find("dd");
+		var xBox = dd.find("div");
+		
+		
+		dt.click(function(){
+			dl.addClass("default").find(dd).fadeOut(0);
+			if($(this).parent().hasClass("default")){
+				$(this).parent().find(dd).fadeIn(300);
+				$(this).parent().removeClass("default")
+			}
+		});
+		
+		dd.find("div").click(function(){
+			var board = 0,
+				ground = 0,
+				wall = 0,
+				p = $(this).parent();
+			p.find("div").removeClass("active");
+			$(this).addClass("active");
+			
+			if(p.attr("data-name") == "board"){
+				board = $(this).attr("data-id")
+			}else if(p.attr("data-name") == "ground"){
+				ground = $(this).attr("data-id")
+			}else if(p.attr("data-name") == "wall"){
+				wall = $(this).attr("data-id")
+			};
+			
+
+			$.ajax({
+				type: "POST",
+				url: "http://baidu.com",
+				timeout: 5000,
+				async: false,
+				dataType: 'json',
+			    data: {
+				    "feature":feature,
+				   	"board":board,
+					"ground":ground,
+					"wall":wall
+				},
+				success: function(d){
+
+				},
+				error: function() {
+					
+				}
+			});
+			
+		})
+		
+	})()
 	
 	
 })
