@@ -60,4 +60,16 @@ $(document).ready(function () {
 	  }
 	});
 	
+	
+	$(".q_a").hover(function(){
+		$(this).find("a").animate({
+			top: -60
+		},300)
+	},function(){
+		$(this).find("a").animate({
+			top: 0
+		},300)
+	})
+	
+	
 }); 
