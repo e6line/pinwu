@@ -1007,3 +1007,6 @@ p.qa-a-t{
 	-ms-border-radius: 2px;
 	-o-border-radius: 2px;
 }
+.qa_list_box .unhappyMessage{
+	left:380px
+}
