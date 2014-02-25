@@ -265,6 +265,7 @@
 	background:#c8292b;
 	text-decoration:none;
 }
+/*noPicTextList*/
 .noPicTextList{
 	overflow:hidden;
 	zoom:1
@@ -330,6 +331,22 @@
 .noPicTextList li .p-l-t span a:hover{
 	background:#c8292b;
 	text-decoration:none;
+}
+/*newNoPicList*/
+.newNoPicList{
+	width: 100%;
+}
+.newNoPicList ul{
+	width: 940px;
+	margin:0 auto;
+}
+.newNoPicList ul li{
+	width: 450px;
+	padding: 10px;
+}
+.newNoPicList ul li .p-l-i img{
+	width: 450px;
+	height: 338px;
 }
 
 

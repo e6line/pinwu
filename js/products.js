@@ -32,17 +32,20 @@ $(document).ready(function(){
 		
 		var no = $("#noPicText"), yes = $("#PicText"), box = $("#p-list");
 		
+		box.removeClass("noPicTextList");
 		no.click(function(){
 			yes.removeClass("active");
 			$(this).addClass("active");
-			box.addClass("noPicTextList");
+			//box.addClass("noPicTextList");
+			box.addClass("newNoPicList");
 			setCookie("ifShowPic", "no", 7);
 		});
 		
 		yes.click(function(){
 			no.removeClass("active");
 			$(this).addClass("active");
-			box.removeClass("noPicTextList");
+			//box.removeClass("noPicTextList");
+			box.removeClass("newNoPicList");
 			setCookie("ifShowPic", "yes", 7);
 		});
 		
