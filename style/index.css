@@ -381,22 +381,22 @@
 }
 .big-pic-show{
 	width: 400px;
-	height: 440px;
+	height: 341px;
 }
 .big-pic-show a{
 	display: block;
 	width: 400px;
-	height: 440px;
+	height: 341px;
 }
 .big-pic-show a i{
 	width: 400px;
-	height: 400px;
+	height: 301px;
 	line-height: 0;
 	overflow: hidden;
 }
 .big-pic-show a i img{
 	width: 400px;
-	height: 400px;
+	height: 301px;
 }
 .big-pic-show a span{
 	display: inline-block;
@@ -410,19 +410,19 @@
 }
 .s-t-p{
 	width: 744px;
-	height: 240px;
+	height: 180px;
 	margin-bottom: 20px;
 }
 .s-t-p a{
 	width: 744px;
-	height: 240px;
+	height: 180px;
 	display: block;
 	position: relative;
 }
 .s-t-p a img{
 	position: absolute;
 	width: 744px;
-	height: 240px;
+	height: 180px;
 	top: 0;
 	left: 0;
 	z-index:9;
@@ -430,7 +430,7 @@
 .s-t-p a .s-t-p-t{
 	position: absolute;
 	width: 260px;
-	height: 200px;
+	height: 140px;
 	padding: 20px;
 	top: 0;
 	right: 0;
@@ -455,7 +455,7 @@
 
 .s-p-list{
 	width: 744px;
-	height: 180px;
+	height: 145px;
 	overflow: hidden;
 }
 .s-p-list ul{
@@ -464,23 +464,23 @@
 .s-p-list ul li{
 	float: left;
 	width: 140px;
-	height: 180px;
+	height: 145px;
 	margin-right: 11px;
 }
 .s-p-list ul li a{
 	display: block;
 	width: 140px;
-	height: 180px;
+	height: 145px;
 }
 .s-p-list ul li a i{
 	width: 140px;
-	height: 140px;
+	height: 105px;
 	line-height: 0;
 	overflow: hidden;
 }
 .s-p-list ul li a i img{
 	width: 140px;
-	height: 140px;
+	height: 105px;
 }
 .s-p-list ul li a span{
 	display: inline-block;
