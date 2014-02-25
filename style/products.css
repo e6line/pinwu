@@ -861,6 +861,13 @@ p.qa-a-t{
 	float: left;
 	text-indent: 24px;
 }
+.video-list .video-summary a{
+	display: inline-block;
+	padding: 5px 10px;
+	background: #e4393c;
+	color: #fff;
+	text-decoration: none;
+}
 .video-list .video-view-more{
 	float: right;
 }
