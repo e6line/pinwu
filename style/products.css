@@ -428,6 +428,7 @@ span.arrow-up{
 .big-pic-show img{
 	width:770px;
 	height:580px;
+	background:#F9F9F9 url(../images/loading.gif) center center no-repeat;
 }
 
 .big-pic-list{
@@ -1027,3 +1028,4 @@ p.qa-a-t{
 .qa_list_box .unhappyMessage{
 	left:380px
 }
+
