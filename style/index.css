@@ -381,22 +381,22 @@
 }
 .big-pic-show{
 	width: 400px;
-	height: 341px;
+	height: 345px;
 }
 .big-pic-show a{
 	display: block;
 	width: 400px;
-	height: 341px;
+	height: 345px;
 }
 .big-pic-show a i{
 	width: 400px;
-	height: 301px;
+	height: 305px;
 	line-height: 0;
 	overflow: hidden;
 }
 .big-pic-show a i img{
 	width: 400px;
-	height: 301px;
+	height: 305px;
 }
 .big-pic-show a span{
 	display: inline-block;
