@@ -109,5 +109,18 @@ $(document).ready(function(){
 		}
 
 	})();
+
+
+	(function(){
+		var obj = $(".select-pic-wrap");
+			obj.toggle(
+				function(){
+					$(this).removeClass('showSelectBox')
+				},
+				function(){
+					$(this).addClass('showSelectBox')
+				}
+			)
+	})();
 	
 })
